@@ -84,7 +84,7 @@ class ReposSearchRequest: NetworkRequest {
         if let repos = repos_response {
             if let items = repos.items {
                 for item in items {
-                    let repo = GithubRepoResult(name: item.name, stars: item.stargazers_count, forks: item.forks_count)
+                    let repo = GithubRepoResult(name: item.name, stars: item.stargazers_count, forks: item.forks_count, html_url: item.html_url)
                     repos_result.append(repo)
                 }
             }
@@ -176,7 +176,7 @@ class UserReposRequest: NetworkRequest {
         var repos_result:[GithubRepoResult] = []
         if let repos = repos_response {
             for repo in repos {
-                let repo = GithubRepoResult(name: repo.name, stars: repo.stargazers_count, forks: repo.forks_count)
+                let repo = GithubRepoResult(name: repo.name, stars: repo.stargazers_count, forks: repo.forks_count, html_url: repo.html_url)
                 repos_result.append(repo)
             }
         }

@@ -246,6 +246,11 @@ class GithubProfileViewController: UIViewController, UISearchBarDelegate, UITabl
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
+        let repo = currentRepos[indexPath.section]
+        if let repo_url = URL(string: repo.html_url) {
+            UIApplication.shared.open(repo_url, options: [:], completionHandler: nil)
+        }
+        
     }
     
 }

@@ -25,6 +25,7 @@ struct GithubSearchRepoModel: Codable {
     var name:String
     var stargazers_count:Int
     var forks_count:Int
+    var html_url:String
 }
 
 struct GithubUserSearchResult {
@@ -51,6 +52,7 @@ struct GithubRepoResult {
     var name:String
     var stars:Int
     var forks:Int
+    var html_url:String
 }
 
 struct GithubSearchUserModel: Codable {
@@ -77,4 +79,5 @@ struct GithubReposModel: Codable {
     var name:String
     var forks_count:Int
     var stargazers_count:Int
+    var html_url:String
 }
