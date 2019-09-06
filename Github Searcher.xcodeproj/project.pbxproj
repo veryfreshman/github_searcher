@@ -13,6 +13,13 @@
 		264633E823225DC6002526AF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 264633E723225DC6002526AF /* Assets.xcassets */; };
 		264633EB23225DC6002526AF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 264633E923225DC6002526AF /* LaunchScreen.storyboard */; };
 		264633F623225DC6002526AF /* Github_SearcherTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 264633F523225DC6002526AF /* Github_SearcherTests.swift */; };
+		2646340123226348002526AF /* user_search_cell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2646340023226348002526AF /* user_search_cell.xib */; };
+		264634032322635A002526AF /* repo_search_cell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 264634022322635A002526AF /* repo_search_cell.xib */; };
+		2646340523226635002526AF /* GithubProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2646340423226635002526AF /* GithubProfileViewController.swift */; };
+		2646340723226773002526AF /* SearchModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2646340623226773002526AF /* SearchModel.swift */; };
+		264634092322705C002526AF /* Cells.swift in Sources */ = {isa = PBXBuildFile; fileRef = 264634082322705C002526AF /* Cells.swift */; };
+		2646340B23228288002526AF /* UIData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2646340A23228288002526AF /* UIData.swift */; };
+		2646340D23229474002526AF /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2646340C23229473002526AF /* Network.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +43,13 @@
 		264633F123225DC6002526AF /* Github SearcherTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Github SearcherTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		264633F523225DC6002526AF /* Github_SearcherTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Github_SearcherTests.swift; sourceTree = "<group>"; };
 		264633F723225DC6002526AF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2646340023226348002526AF /* user_search_cell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = user_search_cell.xib; sourceTree = "<group>"; };
+		264634022322635A002526AF /* repo_search_cell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = repo_search_cell.xib; sourceTree = "<group>"; };
+		2646340423226635002526AF /* GithubProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GithubProfileViewController.swift; sourceTree = "<group>"; };
+		2646340623226773002526AF /* SearchModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchModel.swift; sourceTree = "<group>"; };
+		264634082322705C002526AF /* Cells.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cells.swift; sourceTree = "<group>"; };
+		2646340A23228288002526AF /* UIData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIData.swift; sourceTree = "<group>"; };
+		2646340C23229473002526AF /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,7 +93,14 @@
 			children = (
 				264633E023225DC3002526AF /* AppDelegate.swift */,
 				264633E223225DC3002526AF /* ViewController.swift */,
+				2646340C23229473002526AF /* Network.swift */,
+				2646340A23228288002526AF /* UIData.swift */,
+				264634082322705C002526AF /* Cells.swift */,
+				2646340623226773002526AF /* SearchModel.swift */,
+				2646340423226635002526AF /* GithubProfileViewController.swift */,
 				264633E423225DC3002526AF /* Main.storyboard */,
+				2646340023226348002526AF /* user_search_cell.xib */,
+				264634022322635A002526AF /* repo_search_cell.xib */,
 				264633E723225DC6002526AF /* Assets.xcassets */,
 				264633E923225DC6002526AF /* LaunchScreen.storyboard */,
 				264633EC23225DC6002526AF /* Info.plist */,
@@ -177,6 +198,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				264634032322635A002526AF /* repo_search_cell.xib in Resources */,
+				2646340123226348002526AF /* user_search_cell.xib in Resources */,
 				264633EB23225DC6002526AF /* LaunchScreen.storyboard in Resources */,
 				264633E823225DC6002526AF /* Assets.xcassets in Resources */,
 				264633E623225DC3002526AF /* Main.storyboard in Resources */,
@@ -197,8 +220,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2646340523226635002526AF /* GithubProfileViewController.swift in Sources */,
+				2646340B23228288002526AF /* UIData.swift in Sources */,
 				264633E323225DC3002526AF /* ViewController.swift in Sources */,
 				264633E123225DC3002526AF /* AppDelegate.swift in Sources */,
+				2646340723226773002526AF /* SearchModel.swift in Sources */,
+				2646340D23229474002526AF /* Network.swift in Sources */,
+				264634092322705C002526AF /* Cells.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -15,8 +15,23 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        NotificationCenter.default.addObserver(self, selector: #selector(AppDelegate.errorNotificationSearch(sender:)), name: NSNotification.Name.init(rawValue: "search_error"), object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(AppDelegate.errorNotificationUser(sender:)), name: NSNotification.Name.init(rawValue: "user_error"), object: nil)
         return true
+    }
+    
+    @objc func errorNotificationSearch(sender:Notification) {
+        presentErrorWithText("Error occured while initiating search")
+    }
+    
+    @objc func errorNotificationUser(sender:Notification) {
+        presentErrorWithText("Error occured while retrieving user data")
+    }
+    
+    func presentErrorWithText(_ line:String) {
+        let alert = UIAlertController(title: "Error", message: line, preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "Ok", style: .cancel, handler: nil))
+        window?.rootViewController?.present(alert, animated: true, completion: nil)
     }
 
     func applicationWillResignActive(_ application: UIApplication) {
